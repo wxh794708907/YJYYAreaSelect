@@ -9,15 +9,20 @@
 
 3.调用构造方法实现无限轮播:
 
+```
 - (instancetype)initWithCompletion:(void (^)(YJYYProvince *province, YJYYCity *city, YJYYDistrict *district))completion;
+```
 
 一句话实现图片无限轮播的功能 参考代码如下:
 
 //直接调用构造方法 设置成UITextField的inputView
 
+```
 self.textField.inputView = [[YJYYAreaPickerView alloc]initWithCompletion:^(YJYYProvince *province, YJYYCity *city, YJYYDistrict *district) {
+
     //这里写你需要执行的代码 如设置UITextField中的省份 城市 或者地区
 }];
+```
 
 
 
