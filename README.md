@@ -7,13 +7,13 @@
 
 2.导入头文件 #import "YJYYAreaSelect.h"
 
-3.调用构造方法实现无限轮播:
+3.调用构造方法实现地区选择器:
 
 ```
 - (instancetype)initWithCompletion:(void (^)(YJYYProvince *province, YJYYCity *city, YJYYDistrict *district))completion;
 ```
 
-一句话实现图片无限轮播的功能 参考代码如下:
+一句话实现地区选择器的功能 参考代码如下:
 
 //直接调用构造方法 设置成UITextField的inputView
 
